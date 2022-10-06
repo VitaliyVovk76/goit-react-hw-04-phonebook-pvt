@@ -1,0 +1,15 @@
+.button{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.delete{
+    composes: button;
+    background-color: red;
+}
+
+.create{
+    composes:button;
+    background-color: green;
+}
