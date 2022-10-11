@@ -19,7 +19,7 @@ const Modal = ({ onClose, children }) => {
 
   const eskKeyDown = (evt) => {
     if (evt.code === "Escape") {
-      this.props.onClose();
+      onClose();
     }
   };
 
