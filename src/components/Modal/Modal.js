@@ -8,8 +8,8 @@ const modalRoot = document.querySelector("#modal-root");
 const Modal = ({ onClose, children }) => {
   useEffect(() => {
     window.addEventListener("keydown", eskKeyDown);
-    return window.removeEventListener("keydown", eskKeyDown);
-  }, []);
+    return () => window.removeEventListener("keydown", eskKeyDown);
+  });
 
   const modalClick = (evt) => {
     if (evt.target === evt.currentTarget) {
